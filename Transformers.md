@@ -22,7 +22,7 @@ app('Dingo\Api\Transformer\Factory')->register('User', 'UserTransformer');
 
 #### Use The Response Builder
 
-Refer to the [Response Builder](https://github.com/dingo/api/wiki/Responses#response-builder) chapter for help on how to do this.
+Refer to the [Response Builder](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses#response-builder) chapter for help on how to do this.
 
 ### Fractal
 
@@ -108,4 +108,4 @@ The `$binding` parameter may be useful should your transformation layer include 
 
 The `$request` parameter is the current HTTP request being executed and is useful when your transformation layer requires query string values or other related data.
 
-[← Errors And Error Responses](https://github.com/dingo/api/wiki/Errors-And-Error-Responses) | [Authentication →](https://github.com/dingo/api/wiki/Authentication)
+[← Errors And Error Responses](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Errors-And-Error-Responses) | [Authentication →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication)

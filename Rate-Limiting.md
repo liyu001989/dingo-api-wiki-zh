@@ -101,4 +101,4 @@ Or register it in your Lumen bootstrap file.
 app('Dingo\Api\Http\RateLimit\Handler')->extend(new CustomThrottle(['limit' => 200, 'expires' => 10]));
 ```
 
-[← Authentication](https://github.com/dingo/api/wiki/Authentication) | [Internal Requests →](https://github.com/dingo/api/wiki/Internal-Requests)
+[← Authentication](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication) | [Internal Requests →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Internal-Requests)

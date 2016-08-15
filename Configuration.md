@@ -182,4 +182,4 @@ You can configure this in your `.env` file.
 API_DEBUG=true
 ```
 
-[← Installation](https://github.com/dingo/api/wiki/Installation) | [Creating API Endpoints →](https://github.com/dingo/api/wiki/Creating-API-Endpoints)
+[← Installation](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Installation) | [Creating API Endpoints →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Creating-API-Endpoints)

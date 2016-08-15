@@ -95,4 +95,4 @@ $ php artisan api:routes
 
 This command behaves the same as the `route:list` command that Laravel ships with.
 
-[← Configuration](https://github.com/dingo/api/wiki/Configuration) | [Responses →](https://github.com/dingo/api/wiki/Responses)
+[← Configuration](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Configuration) | [Responses →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses)

@@ -4,7 +4,7 @@ Documenting your API is as important as having a functional API. To help make th
 
 To generate documentation you can use the `api:docs` command. The command has two required arguments, the name of the documentation and the version to generate.
 
-For usage details see the [Commands](https://github.com/dingo/api/wiki/Commands#apidocs) section.
+For usage details see the [Commands](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands#apidocs) section.
 
 ### Resources
 
@@ -265,4 +265,4 @@ public function index()
 }
 ```
 
-[← Making Requests To Your API](https://github.com/dingo/api/wiki/Making-Requests-To-Your-API) | [Commands →](https://github.com/dingo/api/wiki/Commands)
+[← Making Requests To Your API](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Making-Requests-To-Your-API) | [Commands →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands)

@@ -44,7 +44,7 @@ class BaseController extends Controller
 
 Now your controllers can simply extend this base controller. The response builder is available via the `$response` property on your controller. Note that all the methods below can also be used as `withX` should you prefer that syntax.
 
-> Some of the documentation below makes use of [Transformers](https://github.com/dingo/api/wiki/Transformers), be sure to read that chapter for more details.
+> Some of the documentation below makes use of [Transformers](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers), be sure to read that chapter for more details.
 
 #### Responding With An Array
 
@@ -229,4 +229,4 @@ Now all responses that contain pagination links will also add these links to the
 
 > Note that this code isn't production ready and is merely a demonstration of how you can utilize the events.
 
-[← Creating API Endpoints](https://github.com/dingo/api/wiki/Creating-API-Endpoints) | [Errors And Error Responses →](https://github.com/dingo/api/wiki/Errors-And-Error-Responses)
+[← Creating API Endpoints](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Creating-API-Endpoints) | [Errors And Error Responses →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Errors-And-Error-Responses)

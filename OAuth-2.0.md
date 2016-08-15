@@ -1,4 +1,4 @@
-See the [Authentication](https://github.com/dingo/api/wiki/Authentication) chapter for a guide on how to configure an OAuth 2.0 provider.
+See the [Authentication](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication) chapter for a guide on how to configure an OAuth 2.0 provider.
 
 ### Defining Route Scopes
 
@@ -73,4 +73,4 @@ class UserController extends Controller
 }
 ```
 
-[← Internal Requests](https://github.com/dingo/api/wiki/Internal-Requests) | [Making Requests To Your API →](https://github.com/dingo/api/wiki/Making-Requests-To-Your-API)
+[← Internal Requests](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Internal-Requests) | [Making Requests To Your API →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Making-Requests-To-Your-API)

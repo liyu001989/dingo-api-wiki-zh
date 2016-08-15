@@ -159,4 +159,4 @@ try {
 }
 ```
 
-[← Authentication](https://github.com/dingo/api/wiki/Authentication) | [OAuth 2.0 →](https://github.com/dingo/api/wiki/OAuth-2.0)
+[← Authentication](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication) | [OAuth 2.0 →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/OAuth-2.0)

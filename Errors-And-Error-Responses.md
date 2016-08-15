@@ -129,4 +129,4 @@ This exception will then be rendered correctly by the package and the error resp
 
 If you'd like to implement your own form request you *must* overload the `failedValidation` and `failedAuthorization` methods. These methods *must* throw one of the above mentioned exceptions and not the response HTTP exceptions that Laravel throws.
 
-[← Responses](https://github.com/dingo/api/wiki/Responses) | [Transformers →](https://github.com/dingo/api/wiki/Transformers)
+[← Responses](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses) | [Transformers →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers)

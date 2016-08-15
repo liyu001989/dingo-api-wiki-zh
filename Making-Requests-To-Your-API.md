@@ -20,4 +20,4 @@ $ curl -v -H "Accept: application/vnd.YOUR_SUBTYPE.v1+json" http://example.app/u
 
 If you have strict mode enabled and you pass an invalid `Accept` header an unhandled `Symfony\Component\HttpKernel\Exception\BadRequestHttpException` will be thrown.
 
-[← OAuth 2.0](https://github.com/dingo/api/wiki/OAuth-2.0) | [API Blueprint Documentation →](https://github.com/dingo/api/wiki/API-Blueprint-Documentation)
+[← OAuth 2.0](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/OAuth-2.0) | [API Blueprint Documentation →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/API-Blueprint-Documentation)

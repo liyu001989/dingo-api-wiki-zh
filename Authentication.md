@@ -293,4 +293,4 @@ $api->version('v1', function ($api) {
 });
 ```
 
-[← Transformers](https://github.com/dingo/api/wiki/Transformers) | [Rate Limiting →](https://github.com/dingo/api/wiki/Rate-Limiting)
+[← Transformers](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers) | [Rate Limiting →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Rate-Limiting)

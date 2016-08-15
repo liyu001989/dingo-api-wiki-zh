@@ -44,7 +44,7 @@ $ php artisan api:cache
 
 **Available in both Laravel 5.1+ and Lumen 5.1+**
 
-This command will generate documentation from your annotated controllers into a standards compliant API Blueprint 1A document. For more on how to annotate your controllers see the [API Blueprint Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation) chapter.
+This command will generate documentation from your annotated controllers into a standards compliant API Blueprint 1A document. For more on how to annotate your controllers see the [API Blueprint Documentation](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/API-Blueprint-Documentation) chapter.
 
 By default the command will output the generated documentation to `stdout` where you can pipe it to a file or push it to a server.
 
@@ -60,6 +60,6 @@ Output directly to a file with `--output-file`.
 $ php artisan api:docs --name Example --use-version v2 --output-file /path/to/documentation.md
 ```
 
-To avoid defining the name and version manually, you can configure defaults in your configuration file or environment file. For more see the [configuration](https://github.com/dingo/api/wiki/Configuration) chapter.
+To avoid defining the name and version manually, you can configure defaults in your configuration file or environment file. For more see the [configuration](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Configuration) chapter.
 
-[← API Blueprint Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation)
+[← API Blueprint Documentation](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/API-Blueprint-Documentation)
