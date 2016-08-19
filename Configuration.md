@@ -1,40 +1,59 @@
 Much of the package comes preconfigured so that you can start building your API as soon as possible. You can use your `.env` file to configure most of the package, however, some finer tuning of the package will require you to either publish the configuration file (Laravel) or configure it in `bootstrap/app.php` (Lumen). You may also use the `boot` method of your `AppServiceProvider`.
 
+大部分的包都是预先配置的，所以你可以尽快创建你的API。你可以使用你的 `·env` 文件去配置大部分的包，当然，一些包的微调需要你发布配置文件（laravel）或者配置在 `bootstrap/app.php` （lumen）。你也可以使用 `AppServiceProvider` 中的 `boot` 方法。
+
 **Important:** If you're using Laravel 5 you must use either a published configuration file OR a service provider. Do not use the `bootstrap/app.php` file.
 
+**重要：** 如果你正在使用 Laravel 5 你不但需要一个发布的配置文件，还需要一个 service provider。不要使用`bootstrap/app.php` 文件。
+
 If you're using Laravel you can publish the configuration file with the following Artisan command:
+
+如果你正在使用 Laravel 你可以使用下面的 Artisan 命令发布配置文件。
 
 ```
 php artisan vendor:publish --provider="Dingo\Api\Provider\LaravelServiceProvider"
 ```
 
-#### Standards Tree
+#### Standards Tree 标准树
 
 There's three different trees: `x`, `prs`, and `vnd`. The standards tree you use will depend upon the project you're developing.
 
+这有三个不用的树: `x`，`prs` 和 `vnd`。你使用的标准树需要取决于你开发的项目
+
 - The unregistered tree (`x`) is primarily meant for local or private environments.
+- 未登记的树（`x`）主要表示本地和私有环境
 - The personal tree (`prs`) is primarily meant for projects that are not distributed commerically.
+- 私有树（`prs`）主要表示没有商业发布的项目
 - The vendor tree (`vnd`) is primarily meant for projects that are publically available and distributed.
+- 供应商树（`vnd`）主要表示公开发布的项目
 
 > Subtypes using the personal or vendor trees are *technically* meant to register with the IANA.
 
+> 子类型使用私有和供应商树在**技术上**意味着在 IANA 上注册。
+
 You can configure this in your `.env` file.
+
+你可以再你的 `.env` 文件中配置这些
 
 ```
 API_STANDARDS_TREE=vnd
 ```
 
-#### Subtype
+#### Subtype 子类型 
 
 Your subtype is typically a short name of your application or project, all lowercase.
 
+你的 subtype 一般是你的应用或者项目的简称，全小写。
+
 You can configure this in your `.env` file.
+
+你可以在你的 `.env` 文件中配置。
 
 ```
 API_SUBTYPE=myapp
 ```
 
-#### Prefixes and Subdomains
+#### Prefixes and Subdomains 前缀和子域名 
 
 If you've ever worked with an API you'll know that most are served from either a subdomain or under a prefix. A prefix or subdomain *is* required, but only one. Avoid putting a version number as your prefix or subdomain as versioning is handled via the `Accept` header.
 
@@ -45,6 +64,8 @@ API_PREFIX=api
 ```
 
 Or you can use a domain.
+
+或者你可以使用域名
 
 ```
 API_DOMAIN=api.myapp.com
@@ -182,4 +203,4 @@ You can configure this in your `.env` file.
 API_DEBUG=true
 ```
 
-[← Installation](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Installation) | [Creating API Endpoints →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Creating-API-Endpoints)
+[← Installation](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Installation.md) | [Creating API Endpoints →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Creating-API-Endpoints.md)
