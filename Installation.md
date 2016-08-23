@@ -81,4 +81,4 @@ This is a facade for the API router and can be used to fetch the current route, 
 
 这是一个用于 API 路由的facade，可以被用于获取当前路由，请求，检查当前路由名称等。
 
-[Configuration-配置 →](https://github.com/liyu001989/dingo-api-wiki-zh/Configuration.md)
+[Configuration-配置 →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Configuration.md)
