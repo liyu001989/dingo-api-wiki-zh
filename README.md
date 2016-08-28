@@ -9,7 +9,7 @@ Dingo Api 是致力于提供给开发者一套工具，帮助你方便快捷的�
 2. [x] [Configuration-配置](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Configuration.md)
 3. [x] [Creating API Endpoints-创建端点](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Creating-API-Endpoints.md)
 4. [x] [Responses-响应](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses.md)
-5. [ ] [Errors And Error Responses-错误和错误响应](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Errors-And-Error-Responses.md)
+5. [x] [Errors And Error Responses-错误和错误响应](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Errors-And-Error-Responses.md)
 6. [ ] [Transformers-变压器](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers.md)
 7. [ ] [Authentication-授权](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication.md)
 8. [ ] [Rate Limiting-访问速度限制](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Rate-Limiting.md)
