@@ -21,15 +21,19 @@ There's three different trees: `x`, `prs`, and `vnd`. The standards tree you use
 这有三个不用的树: `x`，`prs` 和 `vnd`。你使用的标准树需要取决于你开发的项目
 
 - The unregistered tree (`x`) is primarily meant for local or private environments.
-- 未登记的树（`x`）主要表示本地和私有环境
+- 未注册的树（`x`）主要表示本地和私有环境
 - The personal tree (`prs`) is primarily meant for projects that are not distributed commerically.
 - 私有树（`prs`）主要表示没有商业发布的项目
 - The vendor tree (`vnd`) is primarily meant for projects that are publically available and distributed.
 - 供应商树（`vnd`）主要表示公开发布的项目
 
-> Subtypes using the personal or vendor trees are *technically* meant to register with the IANA.
+> Subtypes using the personal or vendor trees are *technically* meant to register with the IANA, but are not required to.
 
-> 子类型使用私有和供应商树在**技术上**意味着在 IANA 上注册。
+> 子类型使用私有和供应商树在**技术上**意味着在 IANA 上注册，但是你不需要。
+
+At the end of the day, if you aren't sure which to pick the x or unregistered tree is always a safe bet.
+
+最后，如果你不确定该如何选择, x 树或者说未注册树都是安全的。
 
 You can configure this in your `.env` file.
 
@@ -39,7 +43,7 @@ You can configure this in your `.env` file.
 API_STANDARDS_TREE=vnd
 ```
 
-#### Subtype 子类型 
+#### Subtype 子类型
 
 Your subtype is typically a short name of your application or project, all lowercase.
 
@@ -53,7 +57,7 @@ You can configure this in your `.env` file.
 API_SUBTYPE=myapp
 ```
 
-#### Prefixes and Subdomains 前缀和子域名 
+#### Prefixes and Subdomains 前缀和子域名
 
 If you've ever worked with an API you'll know that most are served from either a subdomain or under a prefix. A prefix or subdomain *is* required, but only one. Avoid putting a version number as your prefix or subdomain as versioning is handled via the `Accept` header.
 

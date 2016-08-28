@@ -27,7 +27,9 @@ This package makes use of a 3rd party package to integrate JWT authentication. P
 Once you have the package you can configure the provider in your `config/api.php` file or in a service provider or bootstrap file.
 
 ```php
-'jwt' => 'Dingo\Api\Auth\Provider\JWT'
+'auth' => [
+    'jwt' => 'Dingo\Api\Auth\Provider\JWT',
+],
 ```
 
 ```php
@@ -38,7 +40,7 @@ app('Dingo\Api\Auth\Auth')->extend('jwt', function ($app) {
 
 #### OAuth 2.0
 
-This package makes use of a 3rd party package to integrate OAuth 2.0. You can either install [`league/oauth2-server`](https://github.com/thephpleague/oauth2-server) and configure the server yourself or use the bridge package, [`lucadegasperi/oauth2-server-laravel`](https://github.com/lucadegasperi/oauth2-server-laravel).
+This package makes use of a 3rd party package to integrate OAuth 2.0. You can either install [`league/oauth2-server`](https://github.com/thephpleague/oauth2-server) and configure the server yourself or install and configure the bridge package, [`lucadegasperi/oauth2-server-laravel`](https://github.com/lucadegasperi/oauth2-server-laravel).
 
 > For simplicity this guide will assume you are using the bridge package.
 
@@ -154,7 +156,9 @@ class CustomProvider extends Authorization
 Once you've implemented your authentication provider you can configure it in your `config/api.php` file.
 
 ```php
-'custom' => 'CustomProvider'
+'auth' => [
+    'custom' => 'CustomProvider',
+],
 ```
 
 Or from your bootstrap file or service provider.
@@ -167,7 +171,9 @@ app('Dingo\Api\Auth\Auth')->extend('custom', function ($app) {
 
 ### Protecting Endpoints
 
-You can enable or disable protection at the route or group level by enabled the `api.auth` route middleware.
+You can enable or disable protection at the route or group level by enabled the `api.auth` route middleware. 
+
+> If you are using OAuth2, and using the bridge package, you do not need to register it's middlewares. The `api.auth` middleware handles everything, but doesn't hurt to register them anyway.
 
 #### Require Authentication On All Routes
 
@@ -293,4 +299,4 @@ $api->version('v1', function ($api) {
 });
 ```
 
-[← Transformers](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers) | [Rate Limiting →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Rate-Limiting)
+[← Transformers](https://github.com/dingo/api/wiki/Transformers) | [Rate Limiting →](https://github.com/dingo/api/wiki/Rate-Limiting)
