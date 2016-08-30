@@ -34,15 +34,15 @@ The package will automatically format the response as JSON and set the `Content-
 
 这个包将会自动的格式化响应为 JSON，并设置 `Content-Type` 头为 `application/json`。
 
-### Response Builder 建造响应
+### Response Builder 响应生成器
 
 The response builder provides a fluent interface to easily build a more customizable response. The response builder is generally used in conjunction with **transformers**.
 
-响应的 builder 提供了一个流畅的接口去简单的建立一个更定制化的响应。响应的 builder 通常是与 **transformer**相结合。
+响应生成器提供了一个流畅的接口去简单的建立一个更定制化的响应。响应的生成器通常是与 **transformer**相结合。
 
 To utilize the response builder your controllers should use the `Dingo\Api\Routing\Helpers` trait. To save importing and using the trait on all your controllers you can simply create a base controller that all your API controllers will extend.
 
-要利用响应 builder 你的控制器需要使用 `Dingo\Api\Routing\Helpers` trait。为了保持引入和使用这个 trait 在你的控制器里，你可以简单的创建一个基础控制器，然后你的所有的 API 控制器都继承它。
+要利用响应生成器你的控制器需要使用 `Dingo\Api\Routing\Helpers` trait。为了保持引入和使用这个 trait 在你的控制器里，你可以简单的创建一个基础控制器，然后你的所有的 API 控制器都继承它。
 
 ```php
 use Dingo\Api\Routing\Helpers;
@@ -56,7 +56,7 @@ class BaseController extends Controller
 
 Now your controllers can simply extend this base controller. The response builder is available via the `$response` property on your controller. Note that all the methods below can also be used as `withX` should you prefer that syntax.
 
-现在你的控制器可以直接继承基础控制器。响应 builder 可以在控制器里通过 `$response` 属性获取。提示，下面所有的方法也可以用做 `withX` 使用，你应该会更喜欢这种语法。
+现在你的控制器可以直接继承基础控制器。响应生成器可以在控制器里通过 `$response` 属性获取。提示，下面所有的方法也可以用做 `withX` 使用，你应该会更喜欢这种语法。
 
 > Some of the documentation below makes use of [Transformers](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers.md), be sure to read that chapter for more details.
 
