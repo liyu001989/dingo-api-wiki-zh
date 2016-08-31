@@ -1,10 +1,12 @@
+**切身体会，不够好用，推荐只用 [apidoc](http://apidocjs.com/)， 不翻译了**
+
 Documenting your API is as important as having a functional API. To help make the documenting process easier this package allows you to annotate your API controllers and then generate documentation using the Artisan command line utility.
 
 ### Artisan Command
 
 To generate documentation you can use the `api:docs` command. The command has two required arguments, the name of the documentation and the version to generate.
 
-For usage details see the [Commands](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands#apidocs) section.
+For usage details see the [Commands](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands.md#apidocs) section.
 
 ### Resources
 
@@ -265,4 +267,4 @@ public function index()
 }
 ```
 
-[← Making Requests To Your API](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Making-Requests-To-Your-API) | [Commands →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands)
+[← Making Requests To Your API](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Making-Requests-To-Your-API.md) | [Commands →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands.md)
