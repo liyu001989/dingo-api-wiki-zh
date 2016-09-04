@@ -14,7 +14,7 @@ Dingo Api 是致力于提供给开发者一套工具，帮助你方便快捷的�
 6. [x] [Transformers](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers.md)
 7. [ ] [Authentication-授权](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication.md)
 8. [ ] [Rate Limiting-访问速度限制](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Rate-Limiting.md)
-9. [ ] [Internal Requests-内部调用](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Internal-Requests.md)
+9. [x] [Internal Requests-内部调用](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Internal-Requests.md)
 10. [ ] [OAuth 2.0](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/OAuth-2.0.md)
 11. [x] [Making Requests To Your API-访问你的api](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Making-Requests-To-Your-API.md)
 12. [x] [API Blueprint Documentation-API文档](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/API-Blueprint-Documentation.md)
