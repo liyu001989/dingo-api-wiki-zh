@@ -12,7 +12,7 @@ Dingo Api 是致力于提供给开发者一套工具，帮助你方便快捷的�
 4. [x] [Responses-响应](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses.md)
 5. [x] [Errors And Error Responses-错误和错误响应](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Errors-And-Error-Responses.md)
 6. [x] [Transformers](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers.md)
-7. [ ] [Authentication-认证](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication.md)
+7. [x] [Authentication-认证](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Authentication.md)
 8. [x] [Rate Limiting-访问速度限制](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Rate-Limiting.md)
 9. [x] [Internal Requests-内部调用](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Internal-Requests.md)
 10. [x] [OAuth 2.0](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/OAuth-2.0.md)
