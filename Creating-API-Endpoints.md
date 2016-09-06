@@ -125,5 +125,4 @@ This command behaves the same as the `route:list` command that Laravel ships wit
 
 这个命令和 Laravel 自带的 `route:list` 命令表现相同。
 
-[← Configuration](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/C
-    onfiguration.md) | [Responses →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses.md)
+[← Configuration](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Configuration.md) | [Responses →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses.md)
