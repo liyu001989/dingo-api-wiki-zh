@@ -1,6 +1,6 @@
 Much of the package comes preconfigured so that you can start building your API as soon as possible. You can use your `.env` file to configure most of the package, however, some finer tuning of the package will require you to either publish the configuration file (Laravel) or configure it in `bootstrap/app.php` (Lumen). You may also use the `boot` method of your `AppServiceProvider`.
 
-大部分的包都是预先配置的，所以你可以尽快创建你的API。你可以使用你的 `·env` 文件去配置大部分的包，当然，一些包的微调需要你发布配置文件（laravel）或者配置在 `bootstrap/app.php` （lumen）。你也可以使用 `AppServiceProvider` 中的 `boot` 方法。
+大部分的包都是预先配置好的，所以你可以尽快创建你的API。你可以使用你的 `·env` 文件去配置大部分的包，当然，一些包的微调需要你发布配置文件（laravel）或者配置在 `bootstrap/app.php` （lumen）。你也可以使用 `AppServiceProvider` 中的 `boot` 方法。
 
 **Important:** If you're using Laravel 5 you must use either a published configuration file OR a service provider. Do not use the `bootstrap/app.php` file.
 
