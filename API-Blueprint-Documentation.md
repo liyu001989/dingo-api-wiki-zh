@@ -1,4 +1,4 @@
-**切身体会，不够好用，推荐只用 [apidoc](http://apidocjs.com/)， 不翻译了**
+**切身体会，不够好用，推荐使用 [apidoc](http://apidocjs.com/)， 不翻译了**
 
 Documenting your API is as important as having a functional API. To help make the documenting process easier this package allows you to annotate your API controllers and then generate documentation using the Artisan command line utility.
 
