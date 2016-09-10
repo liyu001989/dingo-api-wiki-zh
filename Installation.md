@@ -79,6 +79,6 @@ This is a facade for the dispatcher, however, it also provides helper methods fo
 
 This is a facade for the API router and can be used to fetch the current route, request, check the current route name, etc.
 
-这是一个用于 API 路由的facade，可以被用于获取当前路由，请求，检查当前路由名称等。
+这是一个用于 API 路由的 facade，可以用作获取当前路由，请求，检查当前路由名称等。
 
 [Configuration-配置 →](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Configuration.md)
