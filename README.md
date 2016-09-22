@@ -1,6 +1,6 @@
 dingo/api 中文文档
 
-好像网上没有dingo/api的中文翻译，作为一个使用了挺久的用户，我闲着没事翻译一下吧，为了避免翻译错误，我保留了英文，翻译的肯定有不对的地方，请中英文结合着理解文档，欢迎指正和PR。
+好像网上没有dingo/api的中文翻译，作为一个使用了挺久的用户，我闲着没事翻译一下吧，为了避免翻译错误，我暂时保留了英文。翻译的肯定有不对的地方，请中英文结合着理解文档，欢迎指正和PR。
 
 The Dingo API package is meant to provide you, the developer, with a set of tools to help you easily and quickly build your own API. While the goal of this package is to remain as flexible as possible it still won't cover all situations and solve all problems.
 

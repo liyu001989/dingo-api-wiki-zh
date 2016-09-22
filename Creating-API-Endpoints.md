@@ -1,8 +1,8 @@
 An endpoint is simply another term for a route. When talking about APIs many people refer to the routes you visit as an endpoint.
 
-一个端点是一个路由的另一种说法。当讨论 API 的时候，很多人把人们访问的路由称作端点。
+一个端点是一个路由的另一种说法。当讨论 API 的时候，很多人把人们访问的路由称作一个端点。
 
-#### Version Groups
+#### Version Groups 版本组
 
 To avoid complications with your main application routes this package utilizes its own router. As such we must first get an instance of the API router to create our endpoints.
 
@@ -24,7 +24,7 @@ $api->version('v1', function ($api) {
 
 If you would like a group to respond to multiple versions you can simply pass an array of versions.
 
-如果你喜欢一个分组返回多个版本，你可以简单的传递一个版本数组。
+如果你想一个分组返回多个版本，只需要传递一个版本数组。
 
 ```php
 $api->version(['v1', 'v2'], function ($api) {
@@ -34,7 +34,7 @@ $api->version(['v1', 'v2'], function ($api) {
 
 You can also treat this group as a standard group for your particular framework by passing an array of attributes as the second parameter.
 
-你可以把这个分组当做你自己特殊框架的标准分组，通过传递一个属性数组，再第二个参数上。
+通过在传递一个属性数组到第二个参数上，你可以把这个分组当做你自己特殊框架的标准分组。
 
 ```php
 $api->version('v1', ['middleware' => 'foo'], function ($api) {
@@ -58,7 +58,7 @@ $api->version('v1', function ($api) {
 
 Once you have a version group you can start to create your endpoints using the `$api` parameter of the group closure.
 
-一旦你有了一个版本分组，你可以开始使用 `$api` 的分组闭包参数创建端点。
+一旦你有了一个版本分组，你就可以在分组必报的参数中，通过 `$api` 创建端点。
 
 ```php
 $api->version('v1', function ($api) {
