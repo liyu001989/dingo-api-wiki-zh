@@ -4,6 +4,8 @@ dingo/api 中文文档
 
 这里有个 lumen 结合 dingo/api 写的 demo，有需要的可以参考下。[https://github.com/liyu001989/lumen-api-demo](https://github.com/liyu001989/lumen-api-demo)
 
+---
+
 The Dingo API package is meant to provide you, the developer, with a set of tools to help you easily and quickly build your own API. While the goal of this package is to remain as flexible as possible it still won't cover all situations and solve all problems.
 
 Dingo Api 是致力于提供给开发者一套工具，帮助你方便快捷的建造你自己的API。这个包的目标是保持尽可能的灵活，它并不能覆盖所有的情况，也不能解决所有的问题。
