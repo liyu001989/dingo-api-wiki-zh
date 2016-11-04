@@ -2,6 +2,8 @@ dingo/api 中文文档
 
 好像网上没有dingo/api的中文翻译，作为一个使用了挺久的用户，我闲着没事翻译一下吧，为了避免翻译错误，我暂时保留了英文。翻译的肯定有不对的地方，请中英文结合着理解文档，欢迎指正和PR。
 
+这里有个 lumen 结合 dingo/api 写的 demo，有需要的可以参考下。[https://github.com/liyu001989/lumen-api-demo](https://github.com/liyu001989/lumen-api-demo)
+
 The Dingo API package is meant to provide you, the developer, with a set of tools to help you easily and quickly build your own API. While the goal of this package is to remain as flexible as possible it still won't cover all situations and solve all problems.
 
 Dingo Api 是致力于提供给开发者一套工具，帮助你方便快捷的建造你自己的API。这个包的目标是保持尽可能的灵活，它并不能覆盖所有的情况，也不能解决所有的问题。
