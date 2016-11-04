@@ -1,10 +1,10 @@
 A functioning API is built upon receiving requests and returning a consumable response to the client. An API will generally return responses in an easy to consume format such as JSON. There's a number of different ways to return responses and it will largely depend on how complex your API is or will become.
 
-一个功能健全的 API 是建立在接受消息和返回可用的响应给可客户端之上。一个 API 一般会返回一个易于格式化的响应，例如 JSON。这里有很多不同的方法返回响应，这取决于你的 API 有多么的复杂或者要成为什么样。
+一个功能健全的 API 建立在接受消息和返回一个可用的响应给给客户端之上。一个 API 一般会返回一个易于格式化的响应，例如 JSON。这里有很多不同的方法返回响应，这取决于你的 API 有多么的复杂或者要成为什么样。
 
 The easiest way to return a consumable response is to simply return an array or object directly from your controller. Not every object can be correctly formatted though so you should ensure that it implements either the `ArrayObject` or the `Illuminate\Support\Contracts\ArrayableInterface` interface.
 
-最简单的方法返回可用的响应是在 controller 中直接返回数组或者对象。不是每一个对象都可以直接格式化，所以你需要确保它实现了 `ArrayObject` 或者 `Illuminate\Support\Contracts\ArrayableInterface` 接口。
+最简单的方法返回可用的响应就是在 controller 中直接返回数组或者对象。不是每一个对象都可以直接格式化，所以你需要确保它实现了 `ArrayObject` 或者 `Illuminate\Support\Contracts\ArrayableInterface` 接口。
 
 ```php
 class UserController
@@ -18,7 +18,7 @@ class UserController
 
 In this case our `User` class extends from `Illuminate\Database\Eloquent\Model` which means it can be formatted as an array, so we can simply return the collection of users we get from calling `User::all()`. Similarly you can use it return a single user.
 
-再这个例子里，我们的 `User` 类继承了 `Illuminate\Database\Eloquent\Model` 意味着他能被格式化成数组，所以我们可以直接返回 users 的集合，通过调用 `User::all()`。同样的你可以返回一个单一的用户。
+在这个例子里，我们的 `User` 类继承了 `Illuminate\Database\Eloquent\Model`, 这意味着它能被格式化成数组，所以我们可以直接返回 users 的集合，通过调用 `User::all()`。同样的, 你可以返回一个单一的用户。
 
 ```php
 class UserController
@@ -38,11 +38,11 @@ The package will automatically format the response as JSON and set the `Content-
 
 The response builder provides a fluent interface to easily build a more customizable response. The response builder is generally used in conjunction with **transformers**.
 
-响应生成器提供了一个流畅的接口去简单的建立一个更定制化的响应。响应的生成器通常是与 **transformer**相结合。
+响应生成器提供了一个流畅的接口去方便的建立一个更定制化的响应。响应的生成器通常是与 **transformer** 相结合。
 
 To utilize the response builder your controllers should use the `Dingo\Api\Routing\Helpers` trait. To save importing and using the trait on all your controllers you can simply create a base controller that all your API controllers will extend.
 
-要利用响应生成器你的控制器需要使用 `Dingo\Api\Routing\Helpers` trait。为了保持引入和使用这个 trait 在你的控制器里，你可以简单的创建一个基础控制器，然后你的所有的 API 控制器都继承它。
+要利用响应生成器, 你的控制器需要使用 `Dingo\Api\Routing\Helpers` trait。为了在你的控制器里保持引入和使用这个 trait，你可以创建一个基础控制器，然后你的所有的 API 控制器都继承它。
 
 ```php
 use Dingo\Api\Routing\Helpers;
@@ -56,7 +56,7 @@ class BaseController extends Controller
 
 Now your controllers can simply extend this base controller. The response builder is available via the `$response` property on your controller. Note that all the methods below can also be used as `withX` should you prefer that syntax.
 
-现在你的控制器可以直接继承基础控制器。响应生成器可以在控制器里通过 `$response` 属性获取。提示，下面所有的方法也可以用做 `withX` 使用，你应该会更喜欢这种语法。
+现在你的控制器可以直接继承基础控制器。响应生成器可以在控制器里通过 `$response` 属性获取。提示，下面所有的方法也可以当做 `withX` 使用，你应该会更喜欢这种语法。
 
 > Some of the documentation below makes use of [Transformers](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Transformers.md), be sure to read that chapter for more details.
 
@@ -104,7 +104,7 @@ class UserController extends BaseController
 }
 ```
 
-#### Responding With Paginated Items 响应分页
+#### Responding With Paginated Items 分页响应
 
 ```php
 class UserController extends BaseController
@@ -124,7 +124,7 @@ class UserController extends BaseController
 return $this->response->noContent();
 ```
 
-#### Responding With Created Response 创建资源的响应
+#### Responding With Created Response 创建了资源的响应
 
 ```php
 return $this->response->created();
@@ -132,7 +132,7 @@ return $this->response->created();
 
 You can also optionally provide a location for the created resource as the first paramter.
 
-你可以现则在第一个参数的位置，提供创建的元素的位置。
+你可以现则在第一个参数的位置，提供创建的资源的位置。
 
 ```php
 return $this->response->created($location);
@@ -174,7 +174,7 @@ return $this->response->errorUnauthorized();
 
 Once you've used one of the above methods you can further customize the response by adding additional headers.
 
-一旦你已经使用了上面的方法，你可以自己添加额外的头信息
+一旦你已经使用了上面的方法，你就可以自己添加额外的头信息
 
 ```php
 return $this->response->item($user, new UserTransformer)->withHeader('X-Foo', 'Bar');
@@ -222,17 +222,17 @@ Dingo\Api\Http\Response::addFormatter('json', new Dingo\Api\Http\Response\Format
 
 By default the callback parameter expected in the query string is `callback`, this can be changed by passing in the first parameter to the class constructor. If the query string does not contain a parameter with the name of your callback parameter it will default to a JSON response.
 
-默认情况下，预计的 query string 中的回调参数是 `callback`，可以传递第一个参数到 class 的构造函数中去替换。如果 query string 中没有提供回调参数的名字，它将默认的返回 JSON 响应。（我没看懂，求修正）
+默认情况下，预计的 query string 中的回调参数是 `callback`，可以传递第一个参数到 class 的构造函数中去替换。如果 query string 中没有提供回调参数的名字，它将默认的返回 JSON 响应。
 
 You can also register and use your own formatters should you need to. Your formatter should extend `Dingo\Api\Http\Response\Format\Format`. There following methods should be defined: `formatEloquentModel`, `formatEloquentCollection`, `formatArray`, and `getContentType`. Refer to the abstract class for more details on what each method should do or take a look at the pre-defined format classes.
 
 如果你需要，你可以注册并使用你自己的 formatters。你的 formatter 需要继承 `Dingo\Api\Http\Response\Format\Format`。下面的方法需要被定义：`formatEloquentModel`, `formatEloquentCollection`, `formatArray` 和 `getContentType`。你可以在预定义格式化类中得到更多的资料，包括提到的抽象类中每个方法需要做什么。
 
-### Morphing And Morphed Events
+### Morphing And Morphed Events 事件
 
 Before this package sends a response it will first `morph` the response. This process involves running any transformers as well as sending the response through the configured formatter. If you need more control of how a response is morphed you can use the `ResponseWasMorphed` and `ResponseIsMorphing` events.
 
-在这个包返回响应之前，会首先会 `改变` 响应。这个过程涉及到运行所有 transformers 以及发送满足配置的格式化响应。如果你需要对响应的变化有更多的控制，你可以使用 `ResponseWasMorphed` 和 `ResponseIsMorphing` 这两个事件.
+在这个包返回响应之前，首先会 `转换` 响应。这个过程涉及到运行所有 transformers 以及发送满足配置的格式化响应。如果你需要对响应的变化有更多的控制，你可以使用 `ResponseWasMorphed` 和 `ResponseIsMorphing` 这两个事件.
 
 Create a listener for either event in your `app/Listeners` directory.
 
@@ -259,7 +259,7 @@ class AddPaginationLinksToResponse
 
 You can then listen for the events by adding the event and your listener in your `EventServiceProvider`.
 
-你可以通过添加事件和监听者到你的 `EventServiceProvider` 中来监听这个事件。
+如果你想监听事件，可以添加事件和监听者到 `EventServiceProvider` 中。
 
 ```php
 protected $listen = [
@@ -271,7 +271,7 @@ protected $listen = [
 
 Now all responses that contain pagination links will also add these links to the `Link` header.
 
-现在，所有的响应都会包含分页链接在，这些链接会放在 `Link` 头中。
+现在，所有的响应都会包含分页链接，这些链接会放在 `Link` 头中。
 
 > Note that this code isn't production ready and is merely a demonstration of how you can utilize the events.
 
