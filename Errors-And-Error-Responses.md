@@ -1,6 +1,6 @@
 Dealing with errors when building an API can be a pain. Instead of manually building error responses you can simply throw an exception that extends from `Symfony\Component\HttpKernel\Exception\HttpException` and the API will automatically handle the response for you.
 
-创建一个 API 的时候处理错误是很痛苦的。代替手动的创建错误响应，你可以简单的抛出一个继承了 `Symfony\Component\HttpKernel\Exception\HttpException` 的异常，API 会自动的为你处理响应。
+创建一个 API 的时候处理错误是很痛苦的。为了避免手动的创建错误响应，你可以简单的抛出一个继承了 `Symfony\Component\HttpKernel\Exception\HttpException` 的异常，API 会自动的为你处理响应。
 
 Here is a list of built-in Symfony exceptions.
 
@@ -26,7 +26,7 @@ Here is a list of built-in Symfony exceptions.
 
 As an example you might throw a `ConflictHttpException` when you attempt to update a record that has been updated by another user prior to this update request.
 
-举个例子，当你修改一个记录的会后，其他的用户已经在你之前修改了他，你可能会抛出一个 `ConflictHttpException` 异常。
+举个例子，当你修改一个记录后，其他的用户已经在你之前修改了它，你可能会抛出一个 `ConflictHttpException` 异常。
 
 ```php
 $api->version('v1', function ($api) {
@@ -44,7 +44,7 @@ $api->version('v1', function ($api) {
 
 The package automatically catches the thrown exception and will convert it into its JSON representation. The responses HTTP status code is also changed to match that of the exception. A `ConflictHttpException` would result in an HTTP 409 status code and the following JSON representation assuming you haven't changed the default error format.
 
-这个包自定的接住异常，然后转换为 JSON。响应的 HTTP 状态码也会根据异常而改变。如果你没有改变默认的错误格式，一个 `ConflictHttpException` 异常返回的结果为，HTTP 499 状态码和响应的 JSON 表述。
+这个包自动的接住异常，然后转换为 JSON。响应的 HTTP 状态码也会根据异常而改变。如果你没有改变默认的错误格式，一个 `ConflictHttpException` 异常返回的结果为，HTTP 409 状态码和响应的 JSON 表述。
 
 ```json
 {
@@ -68,7 +68,7 @@ Dingo\Api\Exception\UpdateResourceFailedException
 
 These exceptions are special in that they allow you to pass along any validation errors that occurred when trying to create, update, or delete resources.
 
-这些异常是特殊的，应为它们允许你传递任何验证错误，当你尝试去创建、更新或者删除资源的时候。
+这些异常是特殊的，因为它们允许你传递任何验证错误，当你尝试去创建、更新或者删除资源的时候。
 
 As an example you might throw a `StoreResourceFailedException` when you encounter errors when trying to validate the creation of a new user.
 
@@ -95,7 +95,7 @@ $api->version('v1', function ($api) {
 
 The package automatically catches the thrown exception and will convert it into its JSON representation. The responses HTTP status code is also changed to match that of the exception. Resources exceptions result in an HTTP 422 status code and the following JSON representation.
 
-这个包自动的抓取这些异常，装换为 JSON 的表述。响应的 HTTP 状态码也会根据异常而改变。资源异常返回的结果为，HTTP 422 状态码和响应的 JSON 表述。
+这个包自动的抓取这些异常，转换为 JSON 的表述。响应的 HTTP 状态码也会根据异常而改变。资源异常返回的结果为 HTTP 422 状态码和响应的 JSON 表述。
 
 ```json
 {

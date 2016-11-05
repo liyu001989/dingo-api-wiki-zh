@@ -1,6 +1,6 @@
 An endpoint is simply another term for a route. When talking about APIs many people refer to the routes you visit as an endpoint.
 
-一个端点是一个路由的另一种说法。当讨论 API 的时候，很多人把人们访问的路由称作一个端点。
+一个端点是一个路由的另一种说法。当讨论 API 的时候，很多人把访问的路由称作一个端点。
 
 #### Version Groups 版本组
 
@@ -14,7 +14,7 @@ $api = app('Dingo\Api\Routing\Router');
 
 We must now define a version group. This allows us to create the same endpoint for multiple versions should we need to change things down the track.
 
-我们现在必须定义一个版本分组。这允许我们为多个版本创建相同的端点。
+现在我们必须定义一个版本分组。这允许我们为多个版本创建相同的端点。
 
 ```php
 $api->version('v1', function ($api) {
@@ -34,7 +34,7 @@ $api->version(['v1', 'v2'], function ($api) {
 
 You can also treat this group as a standard group for your particular framework by passing an array of attributes as the second parameter.
 
-通过在传递一个属性数组到第二个参数上，你可以把这个分组当做你自己特殊框架的标准分组。
+通过在第二个参数上传递一个属性数组，你可以把这个分组当做你自己特殊框架的标准分组。
 
 ```php
 $api->version('v1', ['middleware' => 'foo'], function ($api) {
@@ -68,7 +68,7 @@ $api->version('v1', function ($api) {
 
 Because endpoints are grouped per version you can use the exact same URI to create a different response for the same endpoint.
 
-因为端点被每个版本分组了，你可以为在相同的 URL 上为同一个端点创建不同响应。
+因为端点被每个版本分组了，你可以为相同 URL 上的同一个端点创建不同响应。
 
 ```php
 $api->version('v1', function ($api) {
@@ -109,7 +109,7 @@ app('Dingo\Api\Routing\UrlGenerator')->version('v1')->route('users.index');
 You must supply a version so that the URL can be properly generated based on the route within that version. This let's you use the
 same name across multiple versions.
 
-你需要提供一个版本，这样才能基于这个版本的路由生成正确的 URL。这允许你再不同版本中使用相同的名字。
+你需要提供一个版本，这样才能基于这个版本的路由生成正确的 URL。这允许你在不同版本中使用相同的名字。
 
 #### Viewing Routes In The Console 再命令行查看路由
 
