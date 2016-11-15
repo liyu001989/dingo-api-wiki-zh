@@ -48,7 +48,7 @@ class UserController extends Controller
 
 You can define the methods you want the scopes to apply to via the second parameter, either as a pipe separated string or as an array. If you do not supply the methods then the scopes will apply to all methods. You can also use the `except` and `only` array keys to apply the scopes to a subset of methods.
 
-利用第二个参数，你可以定义 scopes 申请的放阿飞，可以使用管道分隔的字符串或者一个数组。如果你没有提供方法，那么 scopes 将适用于所有方法。你也可以适用 `except`  和  `only` 数组键去适用于方法的子集。
+利用第二个参数，你可以定义 scopes 申请的地方，可以使用管道分隔的字符串或者一个数组。如果你没有提供方法，那么 scopes 将适用于所有方法。你也可以适用 `except`  和  `only` 数组键去适用于方法的子集。
 
 ```php
 use Dingo\Api\Routing\Helpers;

@@ -12,7 +12,7 @@ The word "transformer" is used quite a bit in this chapter. It's worth noting wh
 - A **transformer** is a class that will takes raw data and returns it as a presentable array ready for formatting. The way a transformer is handled is dependant upon the transformation layer.
 
 - **转换层** 是一个类库，准备和操作 transformers。
-- 一个 *transformer* 是一个类，它把原始的数据 。一个 transformer 的处理方式依赖于转换层。
+- 一个 *transformer* 是一个类，它把原始的数据 。转换层决定了一个 transformer 的处理方式。
 
 ### Using Transformers 使用 Transformers
 
@@ -22,10 +22,10 @@ There are a couple ways to make use of transformers.
 
 #### Register A Transformer For A Class 为一个类注册一个 Transformer
 
-When you register a transformer for a given class you'll be able to return the class (assuming it can be turned into an array) directly from your routes and it'll
+When you register a transformer for a githubiven class you'll be able to return the class (assuming it can be turned into an array) directly from your routes and it'll
 be run through the transformer automatically. This is great for simple APIs where you're using models as you can simply return the model from your route.
 
-当你给一个类注册 transformer 的时候你可以从你的路由直接返回这个类 （假设它能被转换为数组），它将会自动的通过 transformer 转换。这很有利于简单的 API，在你使用model的地方，你可以从路由简单的返回一个模型。
+当你给一个类注册 transformer 的时候, 可以从你的路由直接返回这个类 （假设它能被转换为数组），它将会自动的通过 transformer 转换。这很有利于简单的 API，在你使用model的地方，你可以从路由简单的返回一个模型。
 
 ```php
 app('Dingo\Api\Transformer\Factory')->register('User', 'UserTransformer');
@@ -45,7 +45,7 @@ Refer to the [Response Builder](https://github.com/liyu001989/dingo-api-wiki-zh/
 
 To use Fractal it's recommend you read through the documentation found on their website.
 
-要使用 Fractal，建议你从他们的网站读文档。
+要使用 Fractal，建议你去他们的网站阅读文档。
 
 #### Automatic Relationship Eager-loading 自动关系预加载
 
@@ -57,7 +57,7 @@ When using Fractal's includes feature to embed relationships you should ensure y
 
 Fractal is registered as the default transformation layer and with the default options. To configure the include key and separator used when defining relationships to embed you must manually instantiate the `Dingo\Api\Transformer\Adapter\Fractal` instance in a service provider or bootstrap file.
 
-Fractal 被注册为默认的转换层，用默认的配置。当定义嵌入的关系的时候，如果要配置引入的关键字和使用的分隔符，你必须在 service provider 或启动文件中手动的实例化 `Dingo\Api\Transformer\Adapter\Fractal`。
+Fractal 被注册为默认的转换层，用默认的配置。当定义嵌入的关系的时候，如果要配置引入的关键字和使用的分隔符，你必须在 service provider 或启动文件中手动实例化 `Dingo\Api\Transformer\Adapter\Fractal`。
 
 ```php
 $this->app['Dingo\Api\Transformer\Factory']->setAdapter(function ($app) {
