@@ -1,18 +1,26 @@
-**切身体会，不够好用，推荐使用 [apidoc](http://apidocjs.com/)， 不翻译了**
-
 Documenting your API is as important as having a functional API. To help make the documenting process easier this package allows you to annotate your API controllers and then generate documentation using the Artisan command line utility.
 
-### Artisan Command
+为你的 API 添加文档跟完成一个 API 同样重要。为了使文档写起来更容易，这个包允许你在 controllers 中注释你的 API 然后通过 Artisan 命令生成文档。
+
+### Artisan Command   Artisan 命令行
 
 To generate documentation you can use the `api:docs` command. The command has two required arguments, the name of the documentation and the version to generate.
 
+生成文档你可以使用 `api:docs` 命令。这个命令有两个必要的参数，文档的名字和生成的版本。
+
 For usage details see the [Commands](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands.md#apidocs) section.
 
-### Resources
+更多使用详情见 [Commands](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Commands.md#apidocs) 章。
+
+### Resources 资源
 
 Controllers can generally be represented as a resource. Resources may contain a number of actions which are represented by HTTP verbs.
 
+控制机一般代表一个资源。资源可以包含若干代表 HTTP 动词的方法。
+
 To define a resource we can use the `@Resource` annotation.
+
+定义一个资源，我们可以使用 `@Resource` 注释。
 
 ```php
 /**
@@ -26,6 +34,8 @@ class UserController extends Controller
 
 The first parameter given to the resource is its identifier or the name of the resource. We can also give a base URI to the resource.
 
+资源的第一个参数是它的标识符或者是资源的名字。我们也可以给一个资源基本的 URI。
+
 ```php
 /**
  * @Resource("Users", uri="/users")
@@ -37,6 +47,8 @@ class UserController extends Controller
 ```
 
 You can also provide a description of your resource prior to the annotation.
+
+我们也可以在注释的前面提供一段资源的注释。
 
 ```php
 /**
@@ -50,9 +62,11 @@ class UserController extends Controller
 }
 ```
 
-### Actions
+### Actions 方法
 
 An action is represented by a routable method on your controller.
+
+一个 action 代表控制其中的一个可被路由的方法。
 
 You can describe your action with the short and long descriptions of a PHPDoc.
 
@@ -71,6 +85,8 @@ public function index()
 #### `@Get`, `@Post`, `@Put`, `@Patch`, `@Delete`
 
 Each action is represented by an HTTP verb. You must provide a URI as the first parameter to the annotation.
+
+每个 action 代表一个 HTTP 动词。你必须提供一个 URI 作为注释的第一个参数。
 
 ```php
 /**
