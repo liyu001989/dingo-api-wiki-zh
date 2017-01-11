@@ -62,13 +62,15 @@ class UserController extends Controller
 }
 ```
 
-### Actions 方法
+### Actions
 
 An action is represented by a routable method on your controller.
 
-一个 action 代表控制其中的一个可被路由的方法。
+一个方法代表控制器中的一个可被路由的方法。
 
 You can describe your action with the short and long descriptions of a PHPDoc.
+
+你可以通过短的或长的 PHPDoc 描述你的方法。
 
 ```php
 /**
@@ -86,7 +88,7 @@ public function index()
 
 Each action is represented by an HTTP verb. You must provide a URI as the first parameter to the annotation.
 
-每个 action 代表一个 HTTP 动词。你必须提供一个 URI 作为注释的第一个参数。
+每个方法代表一个 HTTP 动词。你必须提供一个 URI 作为注释的第一个参数。
 
 ```php
 /**
@@ -105,6 +107,8 @@ public function index()
 #### `@Versions`
 
 An action may be available across multiple API versions. When generating documentation this annnotation is used to determine what actions will be included once generated.
+
+一个方法可以被访问到，通过不同版本的 API。当生成文档的时候，这个注释用来确定包含哪些方法。
 
 ```php
 /**
@@ -125,7 +129,11 @@ public function index()
 
 An action should define a request that can be executed that will result in a successful or unsuccessful response.
 
+一个方法需要定义一个请求，将导致一个成功或不成功的响应。
+
 A request should contain a body. Depending on the type of request the body will vary. For `POST` requests you can use a string, however you will also need to set the content type.
+
+一个请求需要包含一个body。根据请求的类型，body 会不同。对于 `POST` 请求你可以使用一个字符串，但是你依然需要设置 content type。
 
 ```php
 /**
@@ -145,6 +153,8 @@ public function store()
 
 If you're sending JSON you can use an annotation array and it will automatically be encoded to a JSON string. The content type will default to `application/json`.
 
+如果你发送 JSON 数据，你可以使用数组进行注释，它将自动的编码为 JSON 字符串。content type 将默认为 `application/json`。
+
 ```php
 /**
  * Register user
@@ -163,6 +173,8 @@ public function store()
 
 You can also include additional headers.
 
+你依然可以引入额外的头。
+
 ```php
 /**
  * Register user
@@ -180,6 +192,8 @@ public function store()
 ```
 
 If your action responds differently to multiple requests you must also identify the request.
+
+如果你的方法对不同的请求，会有不同的响应，那么你必须标识请求。
 
 ```php
 /**
@@ -201,7 +215,11 @@ public function store()
 
 An `@Request` should always be followed by an `@Response` which defines the status code along with the content type, body, and headers.
 
+一个 `@Request` 也需要定义一个 `@Response`，它定义了状态码，以及content type, body 和 headers。
+
 Much like a request the response body can be a string (make sure to change the `contentType`) or an annotation array which will be encoded as JSON.
+
+像请求一样，响应的 body 可以是一个字符串(确保要更改 `contentType`) 或者一个JSON 数组的注释。
 
 ```php
 /**
@@ -222,9 +240,13 @@ public function store()
 
 Like a request you can also include headers.
 
+像请求一样，你依然可以引入头信息。
+
 #### `@Transaction`
 
 A transaction lets you define multiple requests and multiple responses for requests. Responses must follow requests however you can define multiple responses for a single request.
+
+一个 transaction 允许你定义多个请求和多个响应。响应必须跟随请求，但你可以为一个请求定义多个响应。
 
 ```php
 /**
@@ -250,6 +272,8 @@ public function store()
 
 If your URI contains query string parameters you can define them either at the resource level or the action level. If a parameter is defined at the resource level you will need to either define it for each action or on the resource.
 
+如果你的 URI 包含查询参数，你可以在资源级别或者方法级别定义他们。如果一个参数定义在资源你级别，你需要在每个方法或资源定义它。
+
 ```php
 /**
  * Show all users
@@ -270,6 +294,8 @@ public function index()
 ```
 
 You can also define the parameters `type` and whether or not it's `required`.
+
+你也可以定义 `type` 参数，无论它是否 `必要`
 
 ```php
 /**
