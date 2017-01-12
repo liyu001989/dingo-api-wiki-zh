@@ -1,5 +1,7 @@
 dingo/api 中文文档
 
+[https://github.com/dingo/api/wiki](https://github.com/dingo/api/wiki)
+
 好像网上没有dingo/api的中文翻译，作为一个使用了挺久的用户，我闲着没事翻译一下吧，为了避免翻译错误，我暂时保留了英文。翻译的或许有不对的地方，请中英文结合着理解文档，欢迎指正和PR。
 
 ---

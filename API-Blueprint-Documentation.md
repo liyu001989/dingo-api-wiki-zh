@@ -16,7 +16,7 @@ For usage details see the [Commands](https://github.com/liyu001989/dingo-api-wik
 
 Controllers can generally be represented as a resource. Resources may contain a number of actions which are represented by HTTP verbs.
 
-控制机一般代表一个资源。资源可以包含若干代表 HTTP 动词的方法。
+控制器一般代表一个资源。资源可以包含若干代表 HTTP 动词的方法。
 
 To define a resource we can use the `@Resource` annotation.
 
@@ -108,7 +108,7 @@ public function index()
 
 An action may be available across multiple API versions. When generating documentation this annnotation is used to determine what actions will be included once generated.
 
-一个方法可以被访问到，通过不同版本的 API。当生成文档的时候，这个注释用来确定包含哪些方法。
+一个方法可以通过不同版本的api访问。当生成文档的时候，这个注释用来确定一次生成包含哪些方法。
 
 ```php
 /**
@@ -193,7 +193,7 @@ public function store()
 
 If your action responds differently to multiple requests you must also identify the request.
 
-如果你的方法对不同的请求，会有不同的响应，那么你必须标识请求。
+如果你的方法对不同的请求会有不同的响应，那么你必须标识请求。
 
 ```php
 /**
@@ -272,7 +272,7 @@ public function store()
 
 If your URI contains query string parameters you can define them either at the resource level or the action level. If a parameter is defined at the resource level you will need to either define it for each action or on the resource.
 
-如果你的 URI 包含查询参数，你可以在资源级别或者方法级别定义他们。如果一个参数定义在资源你级别，你需要在每个方法或资源定义它。
+如果你的 URI 包含查询参数，你可以在资源级别或者方法级别定义他们。如果一个参数定义在资源你级别，你需要为每个方法或资源定义它。
 
 ```php
 /**
