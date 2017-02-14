@@ -162,7 +162,7 @@ return $this->response->errorBadRequest();
 return $this->response->errorForbidden();
 
 // An internal error with an optional message as the first parameter.
-// 一个网络错误，第一个参数可以传递自定义消息。
+// 一个内部错误，第一个参数可以传递自定义消息。
 return $this->response->errorInternal();
 
 // An unauthorized error with an optional message as the first parameter.
