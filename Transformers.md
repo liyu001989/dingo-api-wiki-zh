@@ -33,9 +33,9 @@ app('Dingo\Api\Transformer\Factory')->register('User', 'UserTransformer');
 
 #### Use The Response Builder 使用响应生成器
 
-Refer to the [Response Builder](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses#response-builder.md) chapter for help on how to do this.
+Refer to the [Response Builder](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses.md#response-builder-响应生成器) chapter for help on how to do this.
 
-返回 [响应生成器](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses#response-builder.md) 小节，查看如何使用。
+返回 [响应生成器](https://github.com/liyu001989/dingo-api-wiki-zh/blob/master/Responses.md#response-builder-响应生成器) 小节，查看如何使用。
 
 ### Fractal
 
