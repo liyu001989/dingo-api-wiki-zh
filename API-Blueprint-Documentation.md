@@ -300,7 +300,7 @@ You can also define the parameters `type` and whether or not it's `required`.
 ```php
 /**
  * @Parameters({
- *      @Parameter("example", type="integer", required=true description="This is an example.", default=1)
+ *      @Parameter("example", type="integer", required=true, description="This is an example.", default=1)
  * })
  */
 public function index()
