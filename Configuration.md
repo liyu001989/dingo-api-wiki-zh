@@ -18,7 +18,7 @@ php artisan vendor:publish --provider="Dingo\Api\Provider\LaravelServiceProvider
 
 There's three different trees: `x`, `prs`, and `vnd`. The standards tree you use will depend upon the project you're developing.
 
-这有三个不用的树: `x`，`prs` 和 `vnd`。你使用的标准树需要取决于你开发的项目
+这有三个不同的树: `x`，`prs` 和 `vnd`。你使用的标准树需要取决于你开发的项目
 
 - The unregistered tree (`x`) is primarily meant for local or private environments.
 - 未注册的树（`x`）主要表示本地和私有环境
