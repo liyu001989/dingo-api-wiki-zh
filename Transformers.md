@@ -18,7 +18,7 @@ The word "transformer" is used quite a bit in this chapter. It's worth noting wh
 
 There are a couple ways to make use of transformers.
 
-这有很多方法去使用 transformers。
+这有两种方法去使用 transformers。
 
 #### Register A Transformer For A Class 为一个类注册一个 Transformer
 
