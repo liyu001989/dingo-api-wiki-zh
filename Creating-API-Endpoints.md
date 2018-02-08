@@ -6,7 +6,7 @@ An endpoint is simply another term for a route. When talking about APIs many peo
 
 To avoid complications with your main application routes this package utilizes its own router. As such we must first get an instance of the API router to create our endpoints.
 
-为了避免与你主要的项目路由冲突，dingo/api 利用了他自己的路由。要创建端点，我们首选需要获得一个 API 路由的实例。
+为了避免与你主要的项目路由冲突，dingo/api 利用了他自己的路由。要创建端点，我们首先需要获得一个 API 路由的实例。
 
 ```php
 $api = app('Dingo\Api\Routing\Router');
@@ -58,7 +58,7 @@ $api->version('v1', function ($api) {
 
 Once you have a version group you can start to create your endpoints using the `$api` parameter of the group closure.
 
-一旦你有了一个版本分组，你就可以在分组必报的参数中，通过 `$api` 创建端点。
+一旦你有了一个版本分组，你就可以在分组闭包的参数中，通过 `$api` 创建端点。
 
 ```php
 $api->version('v1', function ($api) {
