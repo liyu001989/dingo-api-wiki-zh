@@ -1,6 +1,6 @@
 Most APIs will usually require some form of authentication prior to returning responses. Sometimes a response may differ when a request is authenticated compared to an unauthenticated request.
 
-许多 API 通常在返回响应之前都需要某种形式的认证，有些时候，一个认证的请求和一个未认证的请求，响应可能不用。
+许多 API 通常在返回响应之前都需要某种形式的认证，有些时候，一个认证的请求和一个未认证的请求，响应可能不同。
 
 This package allows you to configure multiple authentication providers. When authentication is enabled each of the providers is executed in an attempt to authenticate the request.
 
